@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebhookでDiscordにメッセージを送る</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="main" class="main">
+            <p id="status">status:--------</p>
+            <button id="driveStart" class="speedButton">運転しまーす</button>
+            <button id="driveStop" class="speedButton">運転をやめました</button>
+            <p class="tag">カスタム送信</p>
+            <input type="text" id="input" class="input" placeholder="メッセージ">
+            <button id="post">送信</button>
+        </div>
+        <div id="config">
+            <p class="config_title">設定</p>
+            <p class="tag">送信者名</p>
+            <input type="text" id="name" class="input" placeholder="名前">
+            <p class="tag">送信先WebHookURL</p>
+            <input type="url" id="url" class="input" placeholder="https://discordapp.com/api/webhooks/...">
+            <br>
+            <p class="tag">アイコン</p>
+            <div id="images">
+                <img class="icon" src="images/car_0.png">
+                <img class="icon" src="images/car_1.png">
+                <img class="icon" src="images/car_2.png">
+                <img class="icon" src="images/car_3.png">
+                <img class="icon" src="images/car_4.png">
+                <img class="icon" src="images/car_5.png">
+                <img class="icon" src="images/car_6.png">
+                <img class="icon" src="images/car_7.png">
+                <img class="icon" src="images/car_8.png">
+                <img class="icon" src="images/car_9.png">
+                <img class="icon" src="images/car_10.png">
+                <img class="icon" src="images/car_11.png">
+            </div>
+            <button id="save" class="subbutton">保存（ブラウザに保存されます）</button>
+            <button id="remove" class="subbutton">保存データの削除</button>
+        </div>
+        <p>アイコン画像：いらすとや</p>
+        <script src="script.js"></script>
+    </body>
+</html>
